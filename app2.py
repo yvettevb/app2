@@ -1,25 +1,26 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[40]:
 
 
 get_ipython().system('pip install opendatasets')
+get_ipython().system('pip install opendatasets')
 
 
-# In[2]:
+# In[41]:
 
 
 import opendatasets as od 
 
 
-# In[5]:
+# In[42]:
 
 
 od.download('https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents?resource=download')
 
 
-# In[6]:
+# In[43]:
 
 
 import streamlit as st
@@ -27,34 +28,52 @@ import pandas as pd
 import numpy as np 
 
 
-# In[7]:
+# In[ ]:
 
 
 covid = pd.read_csv('US_Accidents_Dec21_updated.csv')
 
 
-# In[8]:
+# In[ ]:
 
 
 st.title('Accident database')
 
 
-# In[9]:
+# In[ ]:
 
 
-Inputaccident = st.sidebar.selectbox('Severity', (1,2,3,4))
+#Inputaccident = st.sidebar.selectbox('Severity', (1,2,3,4))
 
 
-# In[11]:
+# In[ ]:
 
 
-Accidentselect = covid[covid['Severity'] == Inputaccident]
+#Accidentselect = covid[covid['Severity'] == Inputaccident]
 
 
-# In[12]:
+# In[ ]:
 
 
-st.dataframe(Accidentselect)
+#st.dataframe(Accidentselect)
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
